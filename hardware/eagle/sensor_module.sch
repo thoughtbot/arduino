@@ -6938,7 +6938,7 @@ Source: www.kingbright.com</description>
 <parts>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="ATMEGA328_SMT" device="" value="ATMEGA328P"/>
 <part name="BAT1" library="SparkFun-Electromechanical" deviceset="BATTERY" device="20MM_4LEGS" value="20mm coincell"/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="CAP_POL" device="1206"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="CAP_POL" device="1206" value="47uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="1.0UF-16V-10%(0603)" device="" value="1.0uF"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
@@ -6951,8 +6951,8 @@ Source: www.kingbright.com</description>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="SMD"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M06" device="SIP"/>
 <part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49UP" value="16MHz"/>
-<part name="C6" library="SparkFun-Capacitors" deviceset="22PF-50V-5%(0603)" device="" value="22pF"/>
-<part name="C7" library="SparkFun-Capacitors" deviceset="22PF-50V-5%(0603)" device="" value="22pF"/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="22PF-50V-5%(0603)" device="" value="18pF"/>
+<part name="C7" library="SparkFun-Capacitors" deviceset="22PF-50V-5%(0603)" device="" value="18pF"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="PTH"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
@@ -6967,8 +6967,8 @@ Source: www.kingbright.com</description>
 <part name="JP7" library="SparkFun-Connectors" deviceset="M06" device="SIP"/>
 <part name="JP8" library="SparkFun-Connectors" deviceset="M06" device="SIP"/>
 <part name="U2" library="SparkFun-PowerIC" deviceset="MCP73831" device=""/>
-<part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="4.7u"/>
-<part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="4.7u"/>
+<part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="4.7uF"/>
+<part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="4.7uF"/>
 <part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="2K"/>
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="330"/>
 <part name="LED1" library="eagle-ltspice" deviceset="LED_E" device="SML0603"/>
@@ -6989,8 +6989,7 @@ Source: www.kingbright.com</description>
 <instances>
 <instance part="U1" gate="G$1" x="124.46" y="104.14"/>
 <instance part="BAT1" gate="G$1" x="17.78" y="162.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="10.16" y="166.37" size="1.778" layer="95"/>
-<attribute name="VALUE" x="1.27" y="156.21" size="1.778" layer="96"/>
+<attribute name="NAME" x="10.922" y="165.1" size="1.778" layer="95"/>
 </instance>
 <instance part="C1" gate="G$1" x="33.02" y="162.56"/>
 <instance part="C2" gate="G$1" x="43.18" y="160.02"/>
@@ -7019,7 +7018,6 @@ Source: www.kingbright.com</description>
 <instance part="GND1" gate="1" x="76.2" y="91.44"/>
 <instance part="J1" gate="G$1" x="190.5" y="170.18" smashed="yes">
 <attribute name="NAME" x="186.182" y="176.022" size="1.778" layer="95"/>
-<attribute name="VALUE" x="178.816" y="162.56" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="205.74" y="177.8"/>
 <instance part="GND2" gate="1" x="205.74" y="160.02"/>
@@ -7043,12 +7041,17 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="24.9174" y="45.466" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="25.146" y="37.846" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED1" gate="G$1" x="33.02" y="38.1" rot="R180"/>
+<instance part="LED1" gate="G$1" x="33.02" y="38.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="29.464" y="42.672" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="27.305" y="42.672" size="1.778" layer="96" rot="R270"/>
+</instance>
 <instance part="JP9" gate="G$1" x="7.62" y="55.88" rot="R180"/>
 <instance part="GND7" gate="1" x="15.24" y="33.02"/>
 <instance part="GND8" gate="1" x="20.32" y="60.96"/>
 <instance part="GND9" gate="1" x="66.04" y="30.48"/>
-<instance part="JP10" gate="G$1" x="93.98" y="50.8" rot="R180"/>
+<instance part="JP10" gate="G$1" x="93.98" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="96.52" y="44.958" size="1.778" layer="95" rot="R180"/>
+</instance>
 <instance part="C9" gate="G$1" x="116.84" y="142.24" smashed="yes" rot="R270">
 <attribute name="NAME" x="120.269" y="143.764" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.617" y="143.51" size="1.778" layer="96"/>
