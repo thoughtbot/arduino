@@ -3,7 +3,7 @@
 
 Component Refs | Type            | Value      | Package | Qty | Digikey Part #
 -------------- | --------------- | ---------- | ------- | :-: | ------------
-C1             | elec. capacitor | 47uF       | 1206    |  1  | 478-8180-1-ND
+C1             | tant. capacitor | 47uF       | 1206    |  1  | 478-8180-1-ND
 C2,C4,C9       | capacitor       | 0.1uF      | 0603    |  3  | 311-1343-1-ND
 C3             | capacitor       | 1.0uF      | 0603    |  1  | 587-1242-1-ND
 C5,C8          | capacitor       | 4.7uF      | 0603    |  2  | 490-3297-1-ND
