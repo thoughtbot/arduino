@@ -18,19 +18,17 @@ volatile int __watch_dog_timer_flag = 1;
 
 ISR(WDT_vect)
 {
-  if (__watch_dog_timer_flag == 0) {
-    __watch_dog_timer_flag = 1;
-  }
+  __watch_dog_timer_flag = 1;
 }
 
 void enterSleepMode(void);
 
 void setup()
 {
-  MCUSR &= ~(1<<WDRF);
-  WDTCSR |= (1<<WDCE) | (1<<WDE);
+  MCUSR &= ~(1 << WDRF);
+  WDTCSR |= (1 << WDCE);
   WDTCSR = 1 << WDP1 | 1 << WDP2;
-  WDTCSR |= _BV(WDIE);
+  WDTCSR |= (1 << WDIE);
 
   clientSetup();
 }
